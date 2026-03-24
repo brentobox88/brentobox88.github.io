@@ -1,17 +1,15 @@
-<!DOCTYPE html>
+Ôªø<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Brent Glynn ó Mobile App Developer</title>
+    <title>Brent Glynn ‚Äî Mobile App Developer</title>
     <style>
-        /* Apple-style reset and base */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: -apple-system, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             background-color: #ffffff;
@@ -19,22 +17,16 @@
             line-height: 1.42859;
             letter-spacing: -0.022em;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
-
-        /* Apple-style container */
         .container {
             max-width: 980px;
             margin: 0 auto;
             padding: 0 22px;
         }
-
-        /* Hero section - Apple style */
         .hero {
             padding: 120px 0 80px;
             text-align: center;
         }
-
         .hero h1 {
             font-size: 56px;
             font-weight: 600;
@@ -45,22 +37,18 @@
             color: transparent;
             margin-bottom: 16px;
         }
-
         .hero-subtitle {
             font-size: 24px;
             font-weight: 500;
             color: #1d1d1f;
             margin-bottom: 8px;
         }
-
         .hero-description {
             font-size: 17px;
             color: #86868b;
             max-width: 600px;
             margin: 0 auto;
         }
-
-        /* Badge - Apple style */
         .badge {
             display: inline-flex;
             align-items: center;
@@ -73,7 +61,6 @@
             color: #1d1d1f;
             margin-top: 24px;
         }
-
         .status-dot {
             width: 8px;
             height: 8px;
@@ -81,80 +68,54 @@
             background: #34c759;
             display: inline-block;
         }
-
-        /* Section headers */
         .section-header {
             text-align: center;
             padding: 60px 0 40px;
         }
-
         .section-header h2 {
             font-size: 40px;
             font-weight: 600;
             letter-spacing: -0.002em;
             margin-bottom: 12px;
         }
-
-        .section-header p {
-            font-size: 19px;
-            color: #86868b;
-        }
-
-        /* App grid - Apple card style */
         .apps-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             margin-bottom: 80px;
         }
-
         @media (max-width: 768px) {
             .apps-grid {
                 grid-template-columns: 1fr;
-                gap: 20px;
             }
             .hero h1 {
                 font-size: 40px;
             }
-            .hero-subtitle {
-                font-size: 20px;
-            }
-            .container {
-                padding: 0 16px;
-            }
         }
-
         @media (max-width: 1024px) and (min-width: 769px) {
             .apps-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-
-        /* Apple card */
         .app-card {
             background: #f5f5f7;
             border-radius: 18px;
             padding: 28px;
             transition: transform 0.25s ease, box-shadow 0.25s ease;
         }
-
         .app-card:hover {
             transform: scale(1.02);
             box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
         }
-
         .app-icon {
             font-size: 42px;
             margin-bottom: 20px;
         }
-
         .app-title {
             font-size: 24px;
             font-weight: 600;
-            letter-spacing: -0.002em;
             margin-bottom: 8px;
         }
-
         .tech-stack {
             font-size: 13px;
             font-weight: 500;
@@ -163,19 +124,14 @@
             letter-spacing: 0.03em;
             margin-bottom: 16px;
         }
-
         .description {
             font-size: 15px;
             color: #424245;
             line-height: 1.42859;
             margin-bottom: 24px;
         }
-
-        /* Apple button styles */
         .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+            display: inline-block;
             background: #0071e3;
             color: white;
             font-size: 14px;
@@ -184,74 +140,36 @@
             border-radius: 980px;
             text-decoration: none;
             transition: background 0.2s ease;
-            margin-right: 8px;
-            margin-bottom: 8px;
-            border: none;
-            cursor: pointer;
         }
-
         .btn:hover {
             background: #0077ed;
         }
-
-        .btn-secondary {
-            background: #e8e8ed;
-            color: #1d1d1f;
-        }
-
-        .btn-secondary:hover {
-            background: #d8d8df;
-        }
-
-        .btn-outline {
-            background: transparent;
-            border: 1px solid #d2d2d7;
-            color: #1d1d1f;
-        }
-
-        .btn-outline:hover {
-            background: #f5f5f7;
-            border-color: #86868b;
-        }
-
         .btn-coming {
             background: #e8e8ed;
             color: #86868b;
             cursor: default;
-            opacity: 0.7;
         }
-
-        .btn-coming:hover {
-            background: #e8e8ed;
-            transform: none;
-        }
-
-        /* Footer - Apple style */
         footer {
             border-top: 1px solid #d2d2d7;
             padding: 40px 0 32px;
             margin-top: 40px;
             text-align: center;
         }
-
         footer p {
             font-size: 12px;
             color: #86868b;
             margin-bottom: 12px;
         }
-
         footer a {
             color: #424245;
             text-decoration: none;
             font-size: 12px;
             margin: 0 12px;
         }
-
         footer a:hover {
             text-decoration: underline;
             color: #0071e3;
         }
-
         .footer-links {
             margin-top: 16px;
         }
@@ -259,70 +177,57 @@
 </head>
 <body>
     <div class="container">
-        <!-- Hero Section -->
         <div class="hero">
             <div class="badge">
                 <span class="status-dot"></span>
-                <span>Backend Live ï Ready to Test</span>
+                <span>Live ‚Ä¢ Ready to Test</span>
             </div>
             <h1>Brent Glynn</h1>
             <div class="hero-subtitle">Mobile App Developer</div>
             <div class="hero-description">
                 Full-stack developer specializing in React Native, Node.js, and MongoDB.
-                Building tools that solve real problems.
             </div>
         </div>
 
-        <!-- Apps Section -->
         <div class="section-header">
             <h2>Apps</h2>
             <p>Production-ready apps built with modern tech stack</p>
         </div>
 
         <div class="apps-grid">
-            <!-- ReadReceipts -->
             <div class="app-card">
-                <div class="app-icon">??</div>
+                <div class="app-icon">üì∏</div>
                 <div class="app-title">ReadReceipts</div>
-                <div class="tech-stack">React Native ï FastAPI ï MongoDB ï OCR</div>
+                <div class="tech-stack">React Native ‚Ä¢ FastAPI ‚Ä¢ MongoDB ‚Ä¢ OCR</div>
                 <div class="description">
                     OCR-powered receipt scanner. Extract expenses, auto-categorize, and export to CSV.
-                    Built for business and personal finance tracking.
                 </div>
-                <a href="https://expo.dev/preview/update?message=Live+backend+connected&updateRuntimeVersion=1.0.0&createdAt=2026-03-24T10%3A16%3A06.616Z&slug=exp&projectId=d18aa1fb-0718-4486-bfa2-2adc4d2b1db7&group=932194e6-ff03-4fef-b945-cd275f01f81e" class="btn" target="_blank">Try Demo</a>
-                
+                <a href="exp://u.expo.dev/d18aa1fb-0718-4486-bfa2-2adc4d2b1db7?update=932194e6-ff03-4fef-b945-cd275f01f81e" class="btn" target="_blank">Try Demo</a>
             </div>
 
-            <!-- ERCompanion -->
             <div class="app-card">
-                <div class="app-icon">??</div>
+                <div class="app-icon">üè•</div>
                 <div class="app-title">ERCompanion</div>
-                <div class="tech-stack">React Native ï Node.js ï MongoDB</div>
+                <div class="tech-stack">React Native ‚Ä¢ Node.js ‚Ä¢ MongoDB</div>
                 <div class="description">
-                    Emergency Room guide helping visitors navigate the ER journey ó from check-in to discharge.
-                    Wait times, procedure explanations, and family updates.
+                    Emergency Room guide helping visitors navigate the ER journey ‚Äî from check-in to discharge.
                 </div>
                 <a href="#" class="btn btn-coming">Coming Soon</a>
-                <a href="#" class="btn btn-outline btn-coming">View Code</a>
             </div>
 
-            <!-- EduFi -->
             <div class="app-card">
-                <div class="app-icon">??</div>
+                <div class="app-icon">üéì</div>
                 <div class="app-title">EduFi</div>
-                <div class="tech-stack">React Native ï Node.js ï MongoDB</div>
+                <div class="tech-stack">React Native ‚Ä¢ Node.js ‚Ä¢ MongoDB</div>
                 <div class="description">
                     Financial management for students. Budget tuition, books, and living expenses.
-                    Track spending and set savings goals.
                 </div>
                 <a href="#" class="btn btn-coming">Coming Soon</a>
-                <a href="#" class="btn btn-outline btn-coming">View Code</a>
             </div>
         </div>
 
-        <!-- Footer -->
         <footer>
-            <p>© 2026 Brent Glynn</p>
+            <p>¬© 2026 Brent Glynn</p>
             <div class="footer-links">
                 <a href="https://github.com/brentobox88" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/brentglynn" target="_blank">LinkedIn</a>
