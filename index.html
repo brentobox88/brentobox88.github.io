@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brent Glynn - Mobile App Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        header {
+            background: white;
+            border-radius: 24px;
+            padding: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.8rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .app-card {
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+        }
+        .app-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .app-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .tech-stack {
+            color: #667eea;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+        .description {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+        .cta {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            transition: opacity 0.2s;
+        }
+        .cta:hover {
+            opacity: 0.9;
+        }
+        .cta-code {
+            background: #f0f0f0;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        .status-badge {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #4caf50;
+            margin-right: 6px;
+            box-shadow: 0 0 5px #4caf50;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            .app-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Brent Glynn</h1>
+            <p class="subtitle">Mobile App Developer | Full Stack Engineer</p>
+            <p class="subtitle">React Native • Node.js • MongoDB • Expo</p>
+            <div class="badge">
+                <span class="status-badge"></span> Backend Live • Apps Ready to Test
+            </div>
+        </header>
+
+        <div class="apps-grid">
+            <!-- App 1: ReadReceipts -->
+            <div class="app-card">
+                <div class="app-icon">📸</div>
+                <div class="app-title">ReadReceipts</div>
+                <div class="tech-stack">React Native • Expo • FastAPI • MongoDB • OCR</div>
+                <div class="description">
+                    OCR-powered receipt scanner that automatically extracts expenses and categorizes them.
+                    Perfect for business expense tracking and personal finance management.
+                </div>
+                <a href="https://expo.dev/@brentobox88/ReadReceiptsMobile?channel=production" class="cta" target="_blank">📱 Try Demo</a>
+                <a href="https://github.com/brentobox88/readreceipts-backend" class="cta cta-code" target="_blank">📂 Backend Code</a>
+            </div>
+
+            <!-- App 2: ERCompanion -->
+            <div class="app-card">
+                <div class="app-icon">🏥</div>
+                <div class="app-title">ERCompanion</div>
+                <div class="tech-stack">React Native • Expo • Node.js • MongoDB</div>
+                <div class="description">
+                    Emergency Room guide that helps visitors navigate the ER journey — from check-in to discharge.
+                    Provides wait times, procedure explanations, and family communication tools.
+                </div>
+                <a href="#" class="cta cta-code" style="background: #ccc; cursor: not-allowed;">📱 Coming Soon</a>
+                <a href="#" class="cta cta-code" style="background: #ccc; cursor: not-allowed;">📂 Coming Soon</a>
+            </div>
+
+            <!-- App 3: EduFi -->
+            <div class="app-card">
+                <div class="app-icon">🎓</div>
+                <div class="app-title">EduFi</div>
+                <div class="tech-stack">React Native • Expo • Node.js • MongoDB</div>
+                <div class="description">
+                    Financial management app designed for students to budget tuition, books, and living expenses.
+                    Track spending, set savings goals, and manage student finances with ease.
+                </div>
+                <a href="#" class="cta cta-code" style="background: #ccc; cursor: not-allowed;">📱 Coming Soon</a>
+                <a href="#" class="cta cta-code" style="background: #ccc; cursor: not-allowed;">📂 Coming Soon</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 Brent Glynn</p>
+            <p>
+                <a href="https://github.com/brentobox88" target="_blank">GitHub</a> •
+                <a href="https://linkedin.com/in/brentglynn" target="_blank">LinkedIn</a> •
+                <a href="mailto:brent.glynn88@gmail.com">Email</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
