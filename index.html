@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+Ôªø<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Brent Glynn ó Mobile App Developer</title>
+    <title>Brent Glynn ‚Äî Mobile App Developer</title>
     <style>
         * {
             margin: 0;
@@ -15,7 +15,6 @@
             background-color: #ffffff;
             color: #1d1d1f;
             line-height: 1.42859;
-            letter-spacing: -0.022em;
             -webkit-font-smoothing: antialiased;
         }
         .container {
@@ -24,30 +23,22 @@
             padding: 0 22px;
         }
         .hero {
-            padding: 120px 0 80px;
+            padding: 80px 0 60px;
             text-align: center;
         }
         .hero h1 {
-            font-size: 56px;
+            font-size: 48px;
             font-weight: 600;
-            letter-spacing: -0.005em;
             background: linear-gradient(135deg, #1d1d1f 0%, #86868b 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
         .hero-subtitle {
             font-size: 24px;
             font-weight: 500;
             color: #1d1d1f;
-            margin-bottom: 8px;
-        }
-        .hero-description {
-            font-size: 17px;
-            color: #86868b;
-            max-width: 600px;
-            margin: 0 auto;
         }
         .badge {
             display: inline-flex;
@@ -57,9 +48,7 @@
             padding: 8px 16px;
             border-radius: 980px;
             font-size: 14px;
-            font-weight: 500;
-            color: #1d1d1f;
-            margin-top: 24px;
+            margin-bottom: 24px;
         }
         .status-dot {
             width: 8px;
@@ -70,46 +59,37 @@
         }
         .section-header {
             text-align: center;
-            padding: 60px 0 40px;
+            padding: 40px 0 30px;
         }
         .section-header h2 {
             font-size: 40px;
             font-weight: 600;
-            letter-spacing: -0.002em;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
         .apps-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
         }
         @media (max-width: 768px) {
             .apps-grid {
                 grid-template-columns: 1fr;
-            }
-            .hero h1 {
-                font-size: 40px;
-            }
-        }
-        @media (max-width: 1024px) and (min-width: 769px) {
-            .apps-grid {
-                grid-template-columns: repeat(2, 1fr);
             }
         }
         .app-card {
             background: #f5f5f7;
             border-radius: 18px;
             padding: 28px;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            text-align: center;
+            transition: transform 0.2s ease;
         }
         .app-card:hover {
-            transform: scale(1.02);
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
         }
         .app-icon {
-            font-size: 42px;
-            margin-bottom: 20px;
+            font-size: 48px;
+            margin-bottom: 16px;
         }
         .app-title {
             font-size: 24px;
@@ -117,18 +97,33 @@
             margin-bottom: 8px;
         }
         .tech-stack {
-            font-size: 13px;
-            font-weight: 500;
+            font-size: 12px;
             color: #86868b;
             text-transform: uppercase;
-            letter-spacing: 0.03em;
-            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
         }
         .description {
-            font-size: 15px;
+            font-size: 14px;
             color: #424245;
-            line-height: 1.42859;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .qr-container {
+            margin-top: 16px;
+            padding: 12px;
+            background: white;
+            border-radius: 16px;
+            display: inline-block;
+        }
+        .qr-container img {
+            width: 160px;
+            height: 160px;
+        }
+        .qr-note {
+            font-size: 11px;
+            color: #86868b;
+            margin-top: 8px;
         }
         .btn {
             display: inline-block;
@@ -139,7 +134,8 @@
             padding: 10px 20px;
             border-radius: 980px;
             text-decoration: none;
-            transition: background 0.2s ease;
+            margin-top: 8px;
+            cursor: pointer;
         }
         .btn:hover {
             background: #0077ed;
@@ -152,23 +148,17 @@
         footer {
             border-top: 1px solid #d2d2d7;
             padding: 40px 0 32px;
-            margin-top: 40px;
             text-align: center;
         }
         footer p {
             font-size: 12px;
             color: #86868b;
-            margin-bottom: 12px;
         }
         footer a {
             color: #424245;
             text-decoration: none;
             font-size: 12px;
             margin: 0 12px;
-        }
-        footer a:hover {
-            text-decoration: underline;
-            color: #0071e3;
         }
         .footer-links {
             margin-top: 16px;
@@ -180,45 +170,49 @@
         <div class="hero">
             <div class="badge">
                 <span class="status-dot"></span>
-                <span>Live ï Ready to Test</span>
+                <span>Live ‚Ä¢ Ready to Test</span>
             </div>
             <h1>Brent Glynn</h1>
             <div class="hero-subtitle">Mobile App Developer</div>
-            <div class="hero-description">
-                Full-stack developer specializing in React Native, Node.js, and MongoDB.
-            </div>
         </div>
 
         <div class="section-header">
             <h2>Apps</h2>
-            <p>Production-ready apps built with modern tech stack</p>
+            <p>Scan QR code with Expo Go to test</p>
         </div>
 
         <div class="apps-grid">
             <div class="app-card">
-                <div class="app-icon">??</div>
+                <div class="app-icon">üì∏</div>
                 <div class="app-title">ReadReceipts</div>
-                <div class="tech-stack">React Native ï FastAPI ï MongoDB ï OCR</div>
+                <div class="tech-stack">React Native ‚Ä¢ FastAPI ‚Ä¢ MongoDB ‚Ä¢ OCR</div>
                 <div class="description">
                     OCR-powered receipt scanner. Extract expenses, auto-categorize, and export to CSV.
                 </div>
-                <a href="exp://nbzuceo-brentglynn88-8081.exp.direct" class="btn" target="_blank">Try Demo</a>
+                <div class="qr-container">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=exp://nbzuceo-brentglynn88-8081.exp.direct" alt="QR Code">
+                </div>
+                <div class="qr-note">Scan with Expo Go on your phone</div>
+                <button class="btn" onclick="showExpoLink()">üì± Show Link</button>
+                <div id="expoLink" style="display:none; margin-top:12px; font-size:12px; word-break:break-all; background:#e8e8ed; padding:8px; border-radius:8px;">
+                    exp://nbzuceo-brentglynn88-8081.exp.direct
+                </div>
             </div>
 
             <div class="app-card">
-                <div class="app-icon">??</div>
+                <div class="app-icon">üè•</div>
                 <div class="app-title">ERCompanion</div>
-                <div class="tech-stack">React Native ï Node.js ï MongoDB</div>
+                <div class="tech-stack">React Native ‚Ä¢ Node.js ‚Ä¢ MongoDB</div>
                 <div class="description">
-                    Emergency Room guide helping visitors navigate the ER journey ó from check-in to discharge.
+                    Emergency Room guide helping visitors navigate the ER journey ‚Äî from check-in to discharge.
                 </div>
                 <a href="#" class="btn btn-coming">Coming Soon</a>
             </div>
 
             <div class="app-card">
-                <div class="app-icon">??</div>
+                <div class="app-icon">üéì</div>
                 <div class="app-title">EduFi</div>
-                <div class="tech-stack">React Native ï Node.js ï MongoDB</div>
+                <div class="tech-stack">React Native ‚Ä¢ Node.js ‚Ä¢ MongoDB</div>
                 <div class="description">
                     Financial management for students. Budget tuition, books, and living expenses.
                 </div>
@@ -227,7 +221,7 @@
         </div>
 
         <footer>
-            <p>© 2026 Brent Glynn</p>
+            <p>¬© 2026 Brent Glynn</p>
             <div class="footer-links">
                 <a href="https://github.com/brentobox88" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/brentglynn" target="_blank">LinkedIn</a>
@@ -235,5 +229,16 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        function showExpoLink() {
+            var link = document.getElementById('expoLink');
+            if (link.style.display === 'none') {
+                link.style.display = 'block';
+            } else {
+                link.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
