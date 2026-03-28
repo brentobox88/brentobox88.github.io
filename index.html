@@ -15,6 +15,7 @@
             background-color: #ffffff;
             color: #1d1d1f;
             line-height: 1.42859;
+            letter-spacing: -0.022em;
             -webkit-font-smoothing: antialiased;
         }
         .container {
@@ -80,12 +81,20 @@
             .apps-grid {
                 grid-template-columns: 1fr;
             }
+            .hero h1 {
+                font-size: 40px;
+            }
+            .hero-subtitle {
+                font-size: 20px;
+            }
         }
         .app-card {
             background: #f5f5f7;
             border-radius: 18px;
             padding: 28px;
             transition: transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
         }
         .app-card:hover {
             transform: translateY(-4px);
@@ -114,40 +123,56 @@
             color: #424245;
             margin-bottom: 20px;
             text-align: left;
+            flex-grow: 1;
         }
-        .qr-container {
-            margin-top: 16px;
+        .btn-download {
+            display: block;
+            background: #0071e3;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 12px 20px;
+            border-radius: 980px;
+            text-decoration: none;
             text-align: center;
+            transition: background 0.2s ease;
+            margin-bottom: 12px;
         }
-        .qr-container img {
-            width: 160px;
-            height: 160px;
+        .btn-download:hover {
+            background: #0077ed;
         }
-        .qr-note {
-            font-size: 11px;
-            color: #86868b;
-            margin-top: 8px;
+        .btn-test {
+            display: block;
+            background: #34c759;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 12px 20px;
+            border-radius: 980px;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.2s ease;
+            margin-bottom: 12px;
         }
-        .expo-link {
-            font-size: 11px;
-            word-break: break-all;
-            background: #e8e8ed;
-            padding: 8px;
-            border-radius: 8px;
-            margin-top: 12px;
-            font-family: monospace;
+        .btn-test:hover {
+            background: #30d158;
         }
         .btn-coming {
-            display: inline-block;
+            display: block;
             background: #e8e8ed;
             color: #86868b;
             font-size: 14px;
             font-weight: 500;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border-radius: 980px;
-            text-decoration: none;
-            cursor: default;
             text-align: center;
+            cursor: default;
+        }
+        .helper-text {
+            font-size: 11px;
+            color: #86868b;
+            text-align: center;
+            margin-top: 8px;
         }
         footer {
             border-top: 1px solid #d2d2d7;
@@ -186,7 +211,7 @@
 
         <div class="section-header">
             <h2>Apps</h2>
-            <p>Scan QR code with Expo Go to test</p>
+            <p>Test my apps on your phone</p>
         </div>
 
         <div class="apps-grid">
@@ -198,10 +223,14 @@
                 <div class="description">
                     OCR-powered receipt scanner. Extract expenses, auto-categorize, and export to CSV.
                 </div>
-                <div class="qr-container">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=exp://nbzuceo-brentglynn88-8081.exp.direct" alt="QR Code">
-                    <div class="qr-note">Scan with Expo Go on your phone</div>
-                    <div class="expo-link">exp://nbzuceo-brentglynn88-8081.exp.direct</div>
+                <a href="https://expo.dev/go" target="_blank" class="btn-download">
+                    📱 Download Expo Go (Free)
+                </a>
+                <a href="exp://nbzuceo-brentglynn88-8081.exp.direct" class="btn-test">
+                    🚀 Test ReadReceipts
+                </a>
+                <div class="helper-text">
+                    Tap "Test" after installing Expo Go
                 </div>
             </div>
 
@@ -213,9 +242,7 @@
                 <div class="description">
                     Emergency Room guide helping visitors navigate the ER journey — from check-in to discharge.
                 </div>
-                <div style="text-align: center;">
-                    <span class="btn-coming">Coming Soon</span>
-                </div>
+                <div class="btn-coming">Coming Soon</div>
             </div>
 
             <!-- EduFi -->
@@ -226,9 +253,7 @@
                 <div class="description">
                     Financial management for students. Budget tuition, books, and living expenses.
                 </div>
-                <div style="text-align: center;">
-                    <span class="btn-coming">Coming Soon</span>
-                </div>
+                <div class="btn-coming">Coming Soon</div>
             </div>
         </div>
 
